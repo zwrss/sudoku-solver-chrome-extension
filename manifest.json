@@ -1,0 +1,19 @@
+{
+    "name": "Sudoku Solver for Chrome",
+    "version": "1.0.0",
+    "content_scripts": [
+        {
+            "matches": [
+                "https://*.sudoku.com/*",
+                "http://*.sudoku.com/*",
+                "https://sudoku.com/*",
+                "http://sudoku.com/*"
+            ],
+            "js": [
+                "js/external/jquery.js",
+                "js/content_script.js"
+            ]
+        }
+    ],
+    "manifest_version": 2
+}
